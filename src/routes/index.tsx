@@ -77,7 +77,7 @@ function HomePage() {
           <div className="container-page pb-16 md:pb-24">
             <div className="max-w-4xl animate-rise">
               <p className="eyebrow" style={{ color: "rgba(255,255,255,0.7)" }}>
-                Greater Vancouver · Since a decade of landmark work
+                Greater Vancouver · Est.2009
               </p>
               <h1 className="mt-6 text-[11vw] leading-[0.98] md:text-[5rem] xl:text-[6.5rem] font-display">
                 Premium Masonry<br />
