@@ -45,7 +45,7 @@ const DIFFERENCE = [
 ];
 
 const PROJECTS = [
-  { img: IMG.finished1, title: "Twin Lakes Promenade", meta: "Central Richmond · Landscape Masonry", span: "md:col-span-8 md:row-span-2 aspect-[4/5] md:aspect-auto" },
+  { img: IMG.finished1, title: "Minoru Lakes Promenade", meta: "Central Richmond · Landscape Masonry", span: "md:col-span-8 md:row-span-2 aspect-[4/5] md:aspect-auto" },
   { img: IMG.finished2, title: "Cascade Water Feature", meta: "Public Realm · Stone Installation", span: "md:col-span-4 aspect-square" },
   { img: IMG.wall, title: "Basalt Retaining Wall", meta: "Architectural Masonry", span: "md:col-span-4 aspect-square" },
   { img: IMG.bridge, title: "Curved Stone Bridge", meta: "Civic Infrastructure", span: "md:col-span-7 aspect-[4/3]" },
@@ -120,7 +120,7 @@ function HomePage() {
         <div className="container-page grid gap-16 md:grid-cols-12 md:gap-24 items-center">
           <div className="md:col-span-6 relative">
             <div className="aspect-[4/5] w-full overflow-hidden">
-              <img src={IMG.finished1} alt="Finished stone promenade at Twin Lakes" className="h-full w-full object-cover" />
+              <img src={IMG.finished1} alt="Finished stone promenade at Minoru Lakes" className="h-full w-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden md:block bg-background p-6 border border-border w-56">
               <p className="eyebrow">Est. Portfolio</p>
