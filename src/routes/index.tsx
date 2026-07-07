@@ -73,7 +73,7 @@ function HomePage() {
           }}
         />
         <div className="relative z-10 flex h-full flex-col">
-          <div className="flex-1" />
+          <div className="flex-1 min-h-16 md:min-h-20" />
           <div className="container-page pb-16 md:pb-24">
             <div className="max-w-4xl animate-rise">
               <p className="eyebrow" style={{ color: "rgba(255,255,255,0.7)" }}>
