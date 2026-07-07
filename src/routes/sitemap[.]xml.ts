@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { PROJECTS } from "@/lib/projects-data";
 
 const BASE_URL = "";
 
@@ -18,6 +19,11 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/about", changefreq: "monthly", priority: "0.8" },
           { path: "/services", changefreq: "monthly", priority: "0.9" },
           { path: "/projects", changefreq: "monthly", priority: "0.9" },
+          ...PROJECTS.map((p) => ({
+            path: `/projects/${p.slug}`,
+            changefreq: "monthly" as const,
+            priority: "0.7",
+          })),
           { path: "/contact", changefreq: "monthly", priority: "0.7" },
           { path: "/estimate", changefreq: "monthly", priority: "0.8" },
         ];
