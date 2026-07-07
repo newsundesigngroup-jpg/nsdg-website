@@ -15,6 +15,14 @@ import tl21 from "@/assets/tl21.jpg";
 import tl22 from "@/assets/tl22.jpg";
 import tl23 from "@/assets/tl23.jpg";
 import logo from "@/assets/logo.png";
+import sl01 from "@/assets/sewells-landing/sl-01.jpg";
+import sl02 from "@/assets/sewells-landing/sl-02.jpg";
+import sl03 from "@/assets/sewells-landing/sl-03.jpg";
+import sl04 from "@/assets/sewells-landing/sl-04.jpg";
+import sl05 from "@/assets/sewells-landing/sl-05.jpg";
+import sl06 from "@/assets/sewells-landing/sl-06.jpg";
+import sl07 from "@/assets/sewells-landing/sl-07.jpg";
+import sl08 from "@/assets/sewells-landing/sl-08.jpg";
 
 export const IMG = {
   finished1,
@@ -34,4 +42,12 @@ export const IMG = {
   tl22,
   tl23,
   logo,
+  sl01,
+  sl02,
+  sl03,
+  sl04,
+  sl05,
+  sl06,
+  sl07,
+  sl08,
 };
