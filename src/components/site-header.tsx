@@ -70,22 +70,6 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
-          <Link
-            to="/estimate"
-            className="inline-flex items-center gap-2 border px-3.5 py-2 text-[11px] font-medium uppercase tracking-[0.22em] transition-colors"
-            style={{
-              borderColor: transparent ? "rgba(255,255,255,0.6)" : "var(--foreground)",
-            }}
-          >
-            <span
-              className="h-1.5 w-1.5 rounded-full"
-              style={{ background: "var(--gold)" }}
-            />
-            Get a Free Estimate
-          </Link>
-        </div>
-
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
