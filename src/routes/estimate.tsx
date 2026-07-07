@@ -63,7 +63,10 @@ function EstimatePage() {
           <aside className="md:col-span-4 md:sticky md:top-28 self-start">
             <p className="text-muted-foreground leading-relaxed">
               Share a few details about your project and our team will respond within
-              one business day. All inquiries are handled confidentially.
+              one business day. All inquiries are handled confidentially. The detailed
+              information you submit here will aid us in providing you with a free
+              estimate, however, it may be necessary to schedule a visit to your site
+              if we require more information to complete your estimate.
             </p>
             <dl className="mt-10 space-y-6 text-sm">
               <div>
