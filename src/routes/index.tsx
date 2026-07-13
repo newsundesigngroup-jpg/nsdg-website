@@ -18,23 +18,33 @@ export const Route = createFileRoute("/")({
 });
 
 const SERVICES = [
-  { title: "Commercial Masonry", img: IMG.wall, n: "01" },
-  { title: "Luxury Residential Masonry", img: IMG.finished1, n: "02" },
-  { title: "Architectural Stone Installation", img: IMG.build1, n: "03" },
-  { title: "Retaining Walls", img: IMG.finished3, n: "04" },
-  { title: "Natural Stone Supply", img: IMG.cut, n: "05" },
-  { title: "General Construction", img: IMG.bridge, n: "06" },
+  { title: "Commercial Masonry", img: IMG.st03, n: "01" },
+  { title: "Luxury Residential Masonry", img: IMG.ls10, n: "02" },
+  { title: "Architectural Stone Installation", img: IMG.tb09, n: "03" },
+  { title: "Retaining Walls", img: IMG.ia03, n: "04" },
+  { title: "Natural Stone Supply", img: IMG.ia02, n: "05" },
+  { title: "General Construction", img: IMG.keefer04, n: "06" },
 ];
 
-const INDUSTRIES = [
-  "Commercial Developments",
-  "Luxury Residential",
-  "Hotels & Hospitality",
-  "Healthcare",
-  "Office Towers",
-  "Institutional Buildings",
-  "Landscape Architecture",
-  "General Contractors",
+const PILLARS = [
+  {
+    title: "Commercial & Civic",
+    desc: "Landmark infrastructure, public realms, and office developments.",
+    img: IMG.st02,
+    alt: "The Sun Tower's landmark dome — Downtown Vancouver",
+  },
+  {
+    title: "Luxury Residential",
+    desc: "Architectural-grade stone masonry for premium estates and private developments.",
+    img: IMG.ia01,
+    alt: "Private waterfront stone seawall — Indian Arm",
+  },
+  {
+    title: "Landscape Architecture",
+    desc: "Structural retaining walls, water features, and precision hardscaping.",
+    img: IMG.finished3,
+    alt: "Basalt waterfall wall — Minoru Central Park, Richmond",
+  },
 ];
 
 const DIFFERENCE = [
@@ -45,11 +55,11 @@ const DIFFERENCE = [
 ];
 
 const PROJECTS = [
-  { img: IMG.finished1, title: "Minoru Lakes Promenade", meta: "Central Richmond · Landscape Masonry", span: "md:col-span-8 md:row-span-2 aspect-[4/5] md:aspect-auto" },
-  { img: IMG.finished2, title: "Cascade Water Feature", meta: "Public Realm · Stone Installation", span: "md:col-span-4 aspect-square" },
-  { img: IMG.wall, title: "Basalt Retaining Wall", meta: "Architectural Masonry", span: "md:col-span-4 aspect-square" },
-  { img: IMG.bridge, title: "Curved Stone Bridge", meta: "Civic Infrastructure", span: "md:col-span-7 aspect-[4/3]" },
-  { img: IMG.build1, title: "Seat Wall Sequence", meta: "Waterfront Detail", span: "md:col-span-5 aspect-[4/3]" },
+  { img: IMG.ls19, title: "Living Spaces, False Creek", meta: "False Creek · Heritage Envelope Restoration", span: "md:col-span-8 md:row-span-2 aspect-[4/5] md:aspect-auto" },
+  { img: IMG.tb09, title: "Tap & Barrel, South Surrey", meta: "South Surrey · Feature Masonry & Fireplace", span: "md:col-span-4 aspect-square" },
+  { img: IMG.keefer06, title: "The Keefer", meta: "Downtown Eastside · Heritage Envelope Restoration", span: "md:col-span-4 aspect-square" },
+  { img: IMG.ia01, title: "Private Sea Wall, Indian Arm", meta: "Indian Arm · Seawall Restoration", span: "md:col-span-7 aspect-[4/3]" },
+  { img: IMG.finished2, title: "Cascade Water Feature", meta: "Central Richmond · Landscape Masonry", span: "md:col-span-5 aspect-[4/3]" },
 ];
 
 export default HomePage;
@@ -233,8 +243,8 @@ function HomePage() {
         </div>
       </section>
 
-      {/* INDUSTRIES */}
-      <section className="border-t border-border py-28 md:py-40 relative overflow-hidden">
+      {/* PILLARS */}
+      <section className="border-t border-border py-32 md:py-52 relative overflow-hidden">
         <div className="container-page">
           <div className="max-w-2xl">
             <p className="eyebrow">Industries We Serve</p>
@@ -242,14 +252,28 @@ function HomePage() {
               Trusted by developers, architects and institutions.
             </h2>
           </div>
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-px bg-border border border-border">
-            {INDUSTRIES.map((i, idx) => (
+          <div className="mt-20 md:mt-24 grid gap-8 md:grid-cols-3 md:gap-10">
+            {PILLARS.map((p) => (
               <div
-                key={i}
-                className="bg-background p-8 md:p-10 aspect-square flex flex-col justify-between group hover:bg-secondary transition-colors"
+                key={p.title}
+                className="group border border-border bg-card overflow-hidden transition-colors hover:border-foreground/30"
               >
-                <span className="eyebrow">{String(idx + 1).padStart(2, "0")}</span>
-                <h3 className="font-display text-2xl md:text-3xl leading-tight">{i}</h3>
+                <div className="aspect-[4/5] overflow-hidden relative">
+                  <img
+                    src={p.img}
+                    alt={p.alt}
+                    className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{ background: "linear-gradient(180deg, transparent 60%, rgba(15,15,20,0.28) 100%)" }}
+                  />
+                </div>
+                <div className="p-8 md:p-10">
+                  <h3 className="font-display text-2xl md:text-3xl leading-tight">{p.title}</h3>
+                  <p className="mt-4 text-muted-foreground leading-relaxed">{p.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -297,8 +321,8 @@ function HomePage() {
       {/* CTA */}
       <section className="relative h-[80vh] min-h-[520px] w-full overflow-hidden">
         <img
-          src={IMG.finished2}
-          alt="Cascading water feature over natural stone"
+          src={IMG.sl04}
+          alt="Paver plaza beside stone retaining wall at Sewell's Landing"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div
