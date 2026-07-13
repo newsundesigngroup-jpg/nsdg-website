@@ -113,8 +113,7 @@ function HomePage() {
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
                   to="/estimate"
-                  className="group inline-flex items-center gap-3 border border-warm-white bg-warm-white px-7 py-4 text-[11px] font-medium uppercase tracking-[0.24em] text-ink transition-all duration-500 ease-out hover:bg-transparent hover:text-warm-white hover:-translate-y-0.5 hover:shadow-[0_12px_36px_rgba(0,0,0,0.35)]"
-                  style={{ borderColor: "var(--warm-white)" }}
+                  className="group inline-flex items-center gap-3 border border-[var(--warm-white)] bg-[var(--warm-white)] px-7 py-4 text-[11px] font-medium uppercase tracking-[0.24em] text-[var(--ink)] transition-all duration-500 ease-out hover:bg-transparent hover:text-[var(--warm-white)] hover:-translate-y-0.5 hover:shadow-[0_12px_36px_rgba(0,0,0,0.35)]"
                 >
                   Get a Free Estimate
                   <span aria-hidden className="transition-transform duration-500 group-hover:translate-x-1">→</span>
