@@ -88,6 +88,37 @@ export const PROJECTS: ProjectEntry[] = [
       { src: IMG.keefer01, alt: "Balcony detail — The Keefer restoration project" },
     ],
   },
+  {
+    slug: "living-spaces-false-creek",
+    title: "Living Spaces, False Creek",
+    location: "False Creek, Vancouver",
+    type: "Heritage Envelope Restoration",
+    cover: IMG.ls19,
+    coverAlt: "Restored heritage facade at Living Spaces — False Creek, Vancouver",
+    description:
+      "Heritage Envelope Restoration of the Old Vancouver Sun Building at Living Spaces, False Creek, Vancouver BC.",
+    images: [
+      { src: IMG.ls19, alt: "Finished heritage facade — Living Spaces, False Creek" },
+      { src: IMG.ls01, alt: "Restored brick corner alongside original masonry — Living Spaces" },
+      { src: IMG.ls02, alt: "Full scaffold and debris netting during restoration — Living Spaces" },
+      { src: IMG.ls03, alt: "Street view of scaffolded heritage building — Living Spaces" },
+      { src: IMG.ls04, alt: "Wide exterior view during envelope restoration — Living Spaces" },
+      { src: IMG.ls05, alt: "Facade sections marked for restoration sequencing — Living Spaces" },
+      { src: IMG.ls06, alt: "Mason working from scaffold on upper facade — Living Spaces" },
+      { src: IMG.ls07, alt: "Crew delivering materials by flatbed at street level — Living Spaces" },
+      { src: IMG.ls08, alt: "Painted heritage brick facade prior to restoration — Living Spaces" },
+      { src: IMG.ls09, alt: "Rooftop addition with restored red brick — Living Spaces" },
+      { src: IMG.ls10, alt: "Rooftop brick corner and deck detail — Living Spaces" },
+      { src: IMG.ls11, alt: "Rooftop brick corner with window detail — Living Spaces" },
+      { src: IMG.ls12, alt: "Rooftop brick facade beside French doors — Living Spaces" },
+      { src: IMG.ls13, alt: "Checkerboard brick corner detail on rooftop addition — Living Spaces" },
+      { src: IMG.ls14, alt: "Site equipment staged for envelope restoration — Living Spaces" },
+      { src: IMG.ls15, alt: "Mason removing deteriorated brick from the facade — Living Spaces" },
+      { src: IMG.ls16, alt: "Close-up of re-pointed heritage brick and mortar — Living Spaces" },
+      { src: IMG.ls17, alt: "Crew clearing ice at the building entrance in winter — Living Spaces" },
+      { src: IMG.ls18, alt: "Mason working on rooftop scaffold against clear sky — Living Spaces" },
+    ],
+  },
 ];
 
 export function getProjectBySlug(slug: string | undefined) {

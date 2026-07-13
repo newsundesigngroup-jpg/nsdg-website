@@ -34,6 +34,25 @@ import keefer08 from "@/assets/the-keefer/keefer-08.jpg";
 import keefer09 from "@/assets/the-keefer/keefer-09.jpg";
 import keefer10 from "@/assets/the-keefer/keefer-10.jpg";
 import keefer11 from "@/assets/the-keefer/keefer-11.jpg";
+import ls01 from "@/assets/living-spaces/ls01.jpg";
+import ls02 from "@/assets/living-spaces/ls02.jpg";
+import ls03 from "@/assets/living-spaces/ls03.jpg";
+import ls04 from "@/assets/living-spaces/ls04.jpg";
+import ls05 from "@/assets/living-spaces/ls05.jpg";
+import ls06 from "@/assets/living-spaces/ls06.jpg";
+import ls07 from "@/assets/living-spaces/ls07.jpg";
+import ls08 from "@/assets/living-spaces/ls08.jpg";
+import ls09 from "@/assets/living-spaces/ls09.jpg";
+import ls10 from "@/assets/living-spaces/ls10.jpg";
+import ls11 from "@/assets/living-spaces/ls11.jpg";
+import ls12 from "@/assets/living-spaces/ls12.jpg";
+import ls13 from "@/assets/living-spaces/ls13.jpg";
+import ls14 from "@/assets/living-spaces/ls14.jpg";
+import ls15 from "@/assets/living-spaces/ls15.jpg";
+import ls16 from "@/assets/living-spaces/ls16.jpg";
+import ls17 from "@/assets/living-spaces/ls17.jpg";
+import ls18 from "@/assets/living-spaces/ls18.jpg";
+import ls19 from "@/assets/living-spaces/ls19.jpg";
 
 export const IMG = {
   finished1,
@@ -72,4 +91,23 @@ export const IMG = {
   keefer09,
   keefer10,
   keefer11,
+  ls01,
+  ls02,
+  ls03,
+  ls04,
+  ls05,
+  ls06,
+  ls07,
+  ls08,
+  ls09,
+  ls10,
+  ls11,
+  ls12,
+  ls13,
+  ls14,
+  ls15,
+  ls16,
+  ls17,
+  ls18,
+  ls19,
 };
