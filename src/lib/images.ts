@@ -1,6 +1,5 @@
 import finished1 from "@/assets/finished-1.png";
 import finished2 from "@/assets/finished-2.png";
-import finished2Hero from "@/assets/finished-2-hero.jpg";
 import finished3 from "@/assets/finished-3.png";
 import build1 from "@/assets/build-1.jpg";
 import build2 from "@/assets/build-2.jpg";
@@ -73,7 +72,6 @@ import st03 from "@/assets/sun-tower/st03.jpg";
 export const IMG = {
   finished1,
   finished2,
-  finished2Hero,
   finished3,
   build1,
   build2,
