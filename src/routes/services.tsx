@@ -10,7 +10,7 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Commercial masonry, luxury residential masonry, architectural stone installation, retaining walls, natural stone supply and general construction." },
       { property: "og:title", content: "Services — New Sun Contracting" },
       { property: "og:description", content: "Six disciplines, one standard of excellence." },
-      { property: "og:image", content: IMG.build1 },
+      { property: "og:image", content: IMG.tb09 },
     ],
   }),
 });
@@ -21,42 +21,42 @@ const SERVICES = [
     t: "Commercial Masonry",
     d: "Structural and architectural masonry for office towers, mixed-use developments and institutional buildings.",
     apps: ["Office Towers", "Mixed-Use", "Civic Buildings"],
-    img: IMG.wall,
+    img: IMG.st03,
   },
   {
     n: "02",
     t: "Luxury Residential Masonry",
     d: "Custom stonework, chimneys, feature walls, and exterior envelopes for high-end residential builders.",
     apps: ["Estate Homes", "Feature Walls", "Envelopes"],
-    img: IMG.finished1,
+    img: IMG.ls10,
   },
   {
     n: "03",
     t: "Architectural Stone Installation",
     d: "Precision installation of natural stone cladding, veneers, benches and paving on landmark projects.",
     apps: ["Cladding", "Paving", "Benches"],
-    img: IMG.build1,
+    img: IMG.tb09,
   },
   {
     n: "04",
     t: "Retaining Walls",
     d: "Engineered retaining structures in natural stone and full-block masonry for landscape and civil work.",
     apps: ["Landscape", "Civil", "Waterfront"],
-    img: IMG.finished3,
+    img: IMG.ia03,
   },
   {
     n: "05",
     t: "Natural Stone Supply",
     d: "Direct quarry sourcing from Brazil for architects, developers and specifiers seeking exceptional stone.",
     apps: ["Basalt", "Granite", "Custom Cuts"],
-    img: IMG.cut,
+    img: IMG.ia02,
   },
   {
     n: "06",
     t: "General Construction",
     d: "Full construction management and delivery for commercial and luxury residential developments.",
     apps: ["Site Works", "Concrete", "Coordination"],
-    img: IMG.bridge,
+    img: IMG.keefer04,
   },
 ];
 
@@ -110,7 +110,7 @@ function ServicesPage() {
 export function CTABand() {
   return (
     <section className="relative overflow-hidden">
-      <img src={IMG.winter} alt="Masonry installation in winter" className="absolute inset-0 h-full w-full object-cover" />
+      <img src={IMG.ls17} alt="Crew clearing ice at the building entrance in winter — Living Spaces" className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(15,15,20,0.55), rgba(15,15,20,0.8))" }} />
       <div className="relative container-page py-32 md:py-40" style={{ color: "var(--warm-white)" }}>
         <p className="eyebrow" style={{ color: "rgba(255,255,255,0.7)" }}>Next Steps</p>
