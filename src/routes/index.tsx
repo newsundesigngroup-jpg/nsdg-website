@@ -70,10 +70,10 @@ function HomePage() {
       {/* HERO */}
       <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden text-warm-white" style={{ color: "var(--warm-white)" }}>
         <img
-          src={IMG.finished2}
+          src={IMG.finished2Hero}
           alt="Cascade water feature in polished basalt and granite — Minoru Lakes, Central Richmond"
-          className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
-          style={{ filter: "contrast(1.1) saturate(0.92) brightness(0.92)" }}
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ filter: "contrast(1.1) saturate(0.92) brightness(0.92)", transform: "scale(1.02)" }}
         />
         {/* Cinematic dark tint — unifies tone, keeps stone texture crisp, lifts white text */}
         <div
