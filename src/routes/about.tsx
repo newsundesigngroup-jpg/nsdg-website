@@ -9,7 +9,7 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Craftsmanship, international stone sourcing, and disciplined project management define New Sun Contracting's approach to landmark construction." },
       { property: "og:title", content: "About — New Sun Contracting" },
       { property: "og:description", content: "Craftsmanship, sourcing, and discipline for landmark projects across Greater Vancouver." },
-      { property: "og:image", content: IMG.wall },
+      { property: "og:image", content: IMG.keefer11 },
     ],
   }),
 });
@@ -30,7 +30,7 @@ function AboutPage() {
       <section className="container-page pb-24 md:pb-32">
         <div className="grid gap-12 md:grid-cols-12 items-start">
           <div className="md:col-span-6">
-            <img src={IMG.wall} alt="Basalt masonry wall detail" className="w-full aspect-[4/5] object-cover" />
+            <img src={IMG.keefer11} alt="Heritage brick detail after restoration — The Keefer" className="w-full aspect-[4/5] object-cover" />
           </div>
           <div className="md:col-span-5 md:col-start-8 md:sticky md:top-28">
             <p className="text-lg leading-relaxed text-muted-foreground">
@@ -69,7 +69,7 @@ function AboutPage() {
       <section className="py-28 md:py-40 container-page">
         <div className="grid gap-16 md:grid-cols-12 items-end">
           <div className="md:col-span-6">
-            <img src={IMG.cut} alt="Stone cutting on site" className="w-full aspect-[4/3] object-cover" />
+            <img src={IMG.ia02} alt="Cutting granite steps on site — Indian Arm seawall" className="w-full aspect-[4/3] object-cover" />
           </div>
           <div className="md:col-span-6">
             <p className="eyebrow">International Sourcing</p>
