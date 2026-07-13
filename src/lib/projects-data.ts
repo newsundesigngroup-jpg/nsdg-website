@@ -119,6 +119,57 @@ export const PROJECTS: ProjectEntry[] = [
       { src: IMG.ls18, alt: "Mason working on rooftop scaffold against clear sky — Living Spaces" },
     ],
   },
+  {
+    slug: "tap-and-barrel-south-surrey",
+    title: "Tap & Barrel, South Surrey",
+    location: "South Surrey",
+    type: "Feature Masonry & Fireplace",
+    cover: IMG.tb09,
+    coverAlt: "Finished red brick floating fireplace with big-screen feature — Tap & Barrel, South Surrey",
+    description:
+      "Classic red brick floating fireplace and big-screen feature at Tap & Barrel, South Surrey.",
+    images: [
+      { src: IMG.tb09, alt: "Finished floating fireplace with big-screen feature — Tap & Barrel" },
+      { src: IMG.tb06, alt: "Finished dining room with fireplace feature wall — Tap & Barrel" },
+      { src: IMG.tb05, alt: "Finished lounge seating beneath feature lighting — Tap & Barrel" },
+      { src: IMG.tb07, alt: "Illuminated Tap & Barrel storefront sign at night — South Surrey" },
+      { src: IMG.tb01, alt: "Brick pillar under construction — Tap & Barrel, South Surrey" },
+      { src: IMG.tb02, alt: "Masons building the brick fireplace surround — Tap & Barrel" },
+      { src: IMG.tb08, alt: "Brick chimney feature mid-construction with TV opening — Tap & Barrel" },
+      { src: IMG.tb03, alt: "Framed pillar with rough openings before brick veneer — Tap & Barrel" },
+      { src: IMG.tb04, alt: "Pillar framing with electrical rough-in — Tap & Barrel" },
+    ],
+  },
+  {
+    slug: "indian-arm-seawall",
+    title: "Private Sea Wall, Indian Arm",
+    location: "Indian Arm",
+    type: "Seawall Restoration & Landscape Masonry",
+    cover: IMG.ia01,
+    coverAlt: "Private stone seawall and beach access stairway — Indian Arm",
+    description:
+      "Large private stone seawall restoration on Indian Arm, including a stone and concrete stairway to the beach, plus pathway design and installation.",
+    images: [
+      { src: IMG.ia01, alt: "Beach access stairway under construction — Indian Arm" },
+      { src: IMG.ia02, alt: "Cutting granite steps on site — Indian Arm seawall" },
+      { src: IMG.ia03, alt: "Crew building the private stone seawall along the beach — Indian Arm" },
+    ],
+  },
+  {
+    slug: "the-sun-tower",
+    title: "The Sun Tower",
+    location: "Downtown Vancouver",
+    type: "Heritage Restoration & Asbestos Abatement",
+    cover: IMG.st02,
+    coverAlt: "The Sun Tower's iconic dome against a clear sky — Downtown Vancouver",
+    description:
+      "Exterior commercial asbestos abatement following the post-fire asbestos product frenzy in Vancouver, including sculpture and original ceramic tile restoration.",
+    images: [
+      { src: IMG.st02, alt: "The Sun Tower's landmark dome — Downtown Vancouver" },
+      { src: IMG.st03, alt: "Scaffold access along the restored stone facade — The Sun Tower" },
+      { src: IMG.st01, alt: "Crew working from an upper balcony during restoration — The Sun Tower" },
+    ],
+  },
 ];
 
 export function getProjectBySlug(slug: string | undefined) {

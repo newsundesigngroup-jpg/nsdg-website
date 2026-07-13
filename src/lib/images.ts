@@ -53,6 +53,21 @@ import ls16 from "@/assets/living-spaces/ls16.jpg";
 import ls17 from "@/assets/living-spaces/ls17.jpg";
 import ls18 from "@/assets/living-spaces/ls18.jpg";
 import ls19 from "@/assets/living-spaces/ls19.jpg";
+import tb01 from "@/assets/tap-and-barrel/tb01.jpg";
+import tb02 from "@/assets/tap-and-barrel/tb02.jpg";
+import tb03 from "@/assets/tap-and-barrel/tb03.jpg";
+import tb04 from "@/assets/tap-and-barrel/tb04.jpg";
+import tb05 from "@/assets/tap-and-barrel/tb05.jpg";
+import tb06 from "@/assets/tap-and-barrel/tb06.jpg";
+import tb07 from "@/assets/tap-and-barrel/tb07.jpg";
+import tb08 from "@/assets/tap-and-barrel/tb08.jpg";
+import tb09 from "@/assets/tap-and-barrel/tb09.jpg";
+import ia01 from "@/assets/indian-arm-seawall/ia01.jpg";
+import ia02 from "@/assets/indian-arm-seawall/ia02.jpg";
+import ia03 from "@/assets/indian-arm-seawall/ia03.jpg";
+import st01 from "@/assets/sun-tower/st01.jpg";
+import st02 from "@/assets/sun-tower/st02.jpg";
+import st03 from "@/assets/sun-tower/st03.jpg";
 
 export const IMG = {
   finished1,
@@ -110,4 +125,19 @@ export const IMG = {
   ls17,
   ls18,
   ls19,
+  tb01,
+  tb02,
+  tb03,
+  tb04,
+  tb05,
+  tb06,
+  tb07,
+  tb08,
+  tb09,
+  ia01,
+  ia02,
+  ia03,
+  st01,
+  st02,
+  st03,
 };
