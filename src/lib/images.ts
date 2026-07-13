@@ -23,6 +23,17 @@ import sl05 from "@/assets/sewells-landing/sl-05.jpg";
 import sl06 from "@/assets/sewells-landing/sl-06.jpg";
 import sl07 from "@/assets/sewells-landing/sl-07.jpg";
 import sl08 from "@/assets/sewells-landing/sl-08.jpg";
+import keefer01 from "@/assets/the-keefer/keefer-01.jpg";
+import keefer02 from "@/assets/the-keefer/keefer-02.jpg";
+import keefer03 from "@/assets/the-keefer/keefer-03.jpg";
+import keefer04 from "@/assets/the-keefer/keefer-04.jpg";
+import keefer05 from "@/assets/the-keefer/keefer-05.png";
+import keefer06 from "@/assets/the-keefer/keefer-06.jpg";
+import keefer07 from "@/assets/the-keefer/keefer-07.jpg";
+import keefer08 from "@/assets/the-keefer/keefer-08.jpg";
+import keefer09 from "@/assets/the-keefer/keefer-09.jpg";
+import keefer10 from "@/assets/the-keefer/keefer-10.jpg";
+import keefer11 from "@/assets/the-keefer/keefer-11.jpg";
 
 export const IMG = {
   finished1,
@@ -50,4 +61,15 @@ export const IMG = {
   sl06,
   sl07,
   sl08,
+  keefer01,
+  keefer02,
+  keefer03,
+  keefer04,
+  keefer05,
+  keefer06,
+  keefer07,
+  keefer08,
+  keefer09,
+  keefer10,
+  keefer11,
 };
