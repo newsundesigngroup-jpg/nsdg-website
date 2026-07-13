@@ -65,6 +65,29 @@ export const PROJECTS: ProjectEntry[] = [
       { src: IMG.sl08, alt: "Paver run leading toward the feature wall — Sewell's Landing" },
     ],
   },
+  {
+    slug: "the-keefer",
+    title: "The Keefer, Downtown Eastside",
+    location: "Downtown Eastside, Vancouver",
+    type: "Heritage Envelope Restoration",
+    cover: IMG.keefer03,
+    coverAlt: "Scaffolded exterior of The Keefer building during restoration — Downtown Eastside",
+    description:
+      "Chinatown Heritage Envelope Restoration of the famous Keefer building in Downtown East side Vancouver.",
+    images: [
+      { src: IMG.keefer03, alt: "Scaffolded exterior of The Keefer building — Downtown Eastside" },
+      { src: IMG.keefer04, alt: "Full-height scaffold and debris netting — The Keefer, Downtown Eastside" },
+      { src: IMG.keefer05, alt: "Street view of The Keefer heritage building — Downtown Eastside" },
+      { src: IMG.keefer10, alt: "Restored facade with scaffold still in place — The Keefer" },
+      { src: IMG.keefer02, alt: "Re-pointed heritage brick interior wall — The Keefer" },
+      { src: IMG.keefer06, alt: "Restored brick veneer close-up — The Keefer" },
+      { src: IMG.keefer11, alt: "Heritage brick detail after restoration — The Keefer" },
+      { src: IMG.keefer07, alt: "Restored brick corner detail with scaffold — The Keefer" },
+      { src: IMG.keefer08, alt: "Window opening wrapped for weather protection — The Keefer" },
+      { src: IMG.keefer09, alt: "Interior brick veneer installation beneath window line — The Keefer" },
+      { src: IMG.keefer01, alt: "Balcony detail — The Keefer restoration project" },
+    ],
+  },
 ];
 
 export function getProjectBySlug(slug: string | undefined) {
