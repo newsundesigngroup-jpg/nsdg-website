@@ -59,7 +59,7 @@ const PROJECTS = [
   { img: IMG.tb09, title: "Tap & Barrel, South Surrey", meta: "South Surrey · Feature Masonry & Fireplace", span: "md:col-span-4 aspect-square" },
   { img: IMG.keefer06, title: "The Keefer", meta: "Downtown Eastside · Heritage Envelope Restoration", span: "md:col-span-4 aspect-square" },
   { img: IMG.ia01, title: "Private Sea Wall, Indian Arm", meta: "Indian Arm · Seawall Restoration", span: "md:col-span-7 aspect-[4/3]" },
-  { img: IMG.bridge, title: "Curved Stone Bridge", meta: "Central Richmond · Landscape Masonry", span: "md:col-span-5 aspect-[4/3]" },
+  { img: IMG.finished2, title: "Cascade Water Feature", meta: "Central Richmond · Landscape Masonry", span: "md:col-span-5 aspect-[4/3]" },
 ];
 
 export default HomePage;
@@ -70,42 +70,31 @@ function HomePage() {
       {/* HERO */}
       <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden text-warm-white" style={{ color: "var(--warm-white)" }}>
         <img
-          src={IMG.finished2Hero}
-          alt="Cascade water feature in polished basalt and granite — Minoru Lakes, Central Richmond"
-          className="absolute inset-0 h-full w-full object-cover"
-          style={{ filter: "contrast(1.1) saturate(0.92) brightness(0.92)", transform: "scale(1.02)" }}
-        />
-        {/* Cinematic dark tint — unifies tone, keeps stone texture crisp, lifts white text */}
-        <div
-          className="absolute inset-0"
-          style={{
-              background:
-                "linear-gradient(180deg, rgba(8,9,12,0.55) 0%, rgba(8,9,12,0.28) 38%, rgba(8,9,12,0.85) 100%)",
-          }}
+          src={IMG.wall}
+          alt="Hand-cut natural stone masonry wall"
+          className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
+          style={{ filter: "brightness(1.12)" }}
         />
         <div
           className="absolute inset-0"
           style={{
               background:
-                "radial-gradient(120% 90% at 50% 100%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%), radial-gradient(140% 100% at 50% 0%, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 45%)",
+                "linear-gradient(180deg, rgba(15,15,20,0.45) 0%, rgba(15,15,20,0.15) 40%, rgba(15,15,20,0.75) 100%)",
           }}
         />
         <div className="relative z-10 flex h-full flex-col">
           <div className="flex-1 min-h-16 md:min-h-20" />
           <div className="container-page pb-16 md:pb-24">
             <div className="max-w-4xl animate-rise">
-              <p className="eyebrow" style={{ color: "rgba(255,255,255,0.72)", letterSpacing: "0.3em" }}>
+              <p className="eyebrow" style={{ color: "rgba(255,255,255,0.7)" }}>
                 Greater Vancouver · Est.2009
               </p>
-              <h1 className="mt-6 text-[11vw] leading-[0.98] md:text-[5rem] xl:text-[6.5rem] font-display" style={{ textShadow: "0 2px 40px rgba(0,0,0,0.35)" }}>
+              <h1 className="mt-6 text-[11vw] leading-[0.98] md:text-[5rem] xl:text-[6.5rem] font-display">
                 Premium Masonry<br />
                 <span className="italic opacity-90">& Construction</span><br />
                 for Landmark Projects.
               </h1>
-              <p
-                className="mt-8 max-w-xl text-base md:text-lg font-light leading-[1.9]"
-                style={{ color: "rgba(255,255,255,0.85)", letterSpacing: "0.045em" }}
-              >
+              <p className="mt-8 max-w-xl text-base md:text-lg leading-relaxed" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Delivering exceptional masonry, construction, and premium natural stone
                 solutions across Greater Vancouver — for commercial, institutional, and
                 luxury residential developments.
@@ -113,15 +102,16 @@ function HomePage() {
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
                   to="/estimate"
-                  className="group inline-flex items-center gap-3 border border-[var(--warm-white)] bg-[var(--warm-white)] px-7 py-4 text-[11px] font-medium uppercase tracking-[0.24em] text-[var(--ink)] transition-all duration-500 ease-out hover:bg-transparent hover:text-[var(--warm-white)] hover:-translate-y-0.5 hover:shadow-[0_12px_36px_rgba(0,0,0,0.35)]"
+                  className="inline-flex items-center gap-3 bg-warm-white px-7 py-4 text-[11px] font-medium uppercase tracking-[0.22em] text-ink transition-transform hover:-translate-y-0.5"
+                  style={{ background: "var(--warm-white)", color: "var(--ink)" }}
                 >
                   Get a Free Estimate
-                  <span aria-hidden className="transition-transform duration-500 group-hover:translate-x-1">→</span>
+                  <span aria-hidden>→</span>
                 </Link>
                 <Link
                   to="/projects"
-                  className="inline-flex items-center gap-3 border px-7 py-4 text-[11px] font-medium uppercase tracking-[0.24em] transition-all duration-500 ease-out hover:bg-white/10 hover:border-white"
-                  style={{ borderColor: "rgba(255,255,255,0.5)", color: "var(--warm-white)" }}
+                  className="inline-flex items-center gap-3 border px-7 py-4 text-[11px] font-medium uppercase tracking-[0.22em] transition-colors"
+                  style={{ borderColor: "rgba(255,255,255,0.55)", color: "var(--warm-white)" }}
                 >
                   View Projects
                 </Link>
