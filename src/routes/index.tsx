@@ -80,14 +80,14 @@ function HomePage() {
           className="absolute inset-0"
           style={{
               background:
-                "linear-gradient(180deg, rgba(8,9,12,0.55) 0%, rgba(8,9,12,0.28) 38%, rgba(8,9,12,0.85) 100%)",
+                "linear-gradient(180deg, rgba(8,9,12,0.55) 0%, rgba(8,9,12,0.28) 38%, rgba(8,9,12,0.55) 100%)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
               background:
-                "radial-gradient(120% 90% at 50% 100%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 55%), radial-gradient(140% 100% at 50% 0%, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 45%)",
+                "radial-gradient(120% 90% at 50% 100%, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 55%), radial-gradient(140% 100% at 50% 0%, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 45%)",
           }}
         />
         <div className="relative z-10 flex h-full flex-col">
