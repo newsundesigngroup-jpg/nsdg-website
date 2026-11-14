@@ -13,6 +13,7 @@ const NAV = [
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [stoneOpen, setStoneOpen] = useState(false);
   const { location } = useRouterState();
   const isHome = location.pathname === "/";
   const transparent = isHome && !scrolled && !open;
@@ -55,7 +56,6 @@ export function SiteHeader() {
           </span>
         </Link>
 
-
         <nav className="hidden md:flex items-center gap-10">
           {NAV.map((item) => (
             <Link
@@ -68,13 +68,37 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-       <a
-  href="https://investmentinteriors.com"
-  className="text-[11px] font-medium uppercase tracking-[0.22em] transition-opacity hover:opacity-60"
->
-  Stone Interiors
-</a>
- </nav>
+          <div
+            className="relative"
+            onMouseEnter={() => setStoneOpen(true)}
+            onMouseLeave={() => setStoneOpen(false)}
+          >
+            <a
+              href="https://investmentinteriors.com"
+              className="text-[11px] font-medium uppercase tracking-[0.22em] transition-opacity hover:opacity-60"
+            >
+              Stone Interiors ▾
+            </a>
+            {stoneOpen && (
+              <div className="absolute left-0 top-full pt-3">
+                <div className="flex min-w-56 flex-col border border-border bg-background py-2 text-foreground shadow-lg">
+                  <a
+                    href="https://investmentinteriors.com"
+                    className="px-5 py-3 text-[11px] font-medium uppercase tracking-[0.22em] transition-opacity hover:opacity-60"
+                  >
+                    Brazilian Black Jade
+                  </a>
+                  <a
+                    href="https://investmentinteriors.com"
+                    className="px-5 py-3 text-[11px] font-medium uppercase tracking-[0.22em] transition-opacity hover:opacity-60"
+                  >
+                    Canadian Green Jade
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
+        </nav>
 
         <button
           type="button"
@@ -108,13 +132,33 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-           <a
-  href="https://investmentinteriors.com"
-  className="text-sm uppercase tracking-[0.22em]"
->
-  Stone Interiors
-</a>
- <Link
+            <div className="flex flex-col gap-5">
+              <button
+                type="button"
+                onClick={() => setStoneOpen((v) => !v)}
+                className="text-left text-sm uppercase tracking-[0.22em]"
+                aria-expanded={stoneOpen}
+              >
+                Stone Interiors {stoneOpen ? "▴" : "▾"}
+              </button>
+              {stoneOpen && (
+                <div className="flex flex-col gap-5 pl-4">
+                  <a
+                    href="https://investmentinteriors.com"
+                    className="text-sm uppercase tracking-[0.22em]"
+                  >
+                    Brazilian Black Jade
+                  </a>
+                  <a
+                    href="https://investmentinteriors.com"
+                    className="text-sm uppercase tracking-[0.22em]"
+                  >
+                    Canadian Green Jade
+                  </a>
+                </div>
+              )}
+            </div>
+            <Link
               to="/estimate"
               className="mt-2 inline-flex items-center justify-center border border-foreground px-4 py-3 text-[11px] uppercase tracking-[0.22em]"
             >
