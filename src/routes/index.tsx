@@ -99,7 +99,8 @@ function HomePage() {
               </p>
               <h1 className="mt-6 text-[11vw] leading-[0.98] md:text-[5rem] xl:text-[6.5rem] font-display" style={{ textShadow: "0 2px 40px rgba(0,0,0,0.35)" }}>
                 Premium Masonry<br />
-                <span className="italic opacity-90">& Construction</span><br />
+                <span className="italic opacity-90">Stone & Construction</span><br />
+
                 for Landmark Projects.
               </h1>
               <p
