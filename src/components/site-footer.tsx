@@ -43,6 +43,7 @@ export function SiteFooter() {
             <li><Link to="/services" className="hover:opacity-60">Services</Link></li>
             <li><Link to="/projects" className="hover:opacity-60">Projects</Link></li>
             <li><Link to="/contact" className="hover:opacity-60">Contact</Link></li>
+<li><a href="https://investmentinteriors.com" className="hover:opacity-60">Stone Interiors</a></li>
           </ul>
         </div>
 
