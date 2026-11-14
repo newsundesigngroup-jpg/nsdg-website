@@ -68,7 +68,13 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-        </nav>
+       <a
+  href="https://investmentinteriors.com"
+  className="text-[11px] font-medium uppercase tracking-[0.22em] transition-opacity hover:opacity-60"
+>
+  Stone Interiors
+</a>
+ </nav>
 
         <button
           type="button"
@@ -102,7 +108,13 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-            <Link
+           <a
+  href="https://investmentinteriors.com"
+  className="text-sm uppercase tracking-[0.22em]"
+>
+  Stone Interiors
+</a>
+ <Link
               to="/estimate"
               className="mt-2 inline-flex items-center justify-center border border-foreground px-4 py-3 text-[11px] uppercase tracking-[0.22em]"
             >
