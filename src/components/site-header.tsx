@@ -14,6 +14,7 @@ export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [stoneOpen, setStoneOpen] = useState(false);
+  const [exteriorsOpen, setExteriorsOpen] = useState(false);
   const { location } = useRouterState();
   const isHome = location.pathname === "/";
   const transparent = isHome && !scrolled && !open;
@@ -98,6 +99,30 @@ export function SiteHeader() {
               </div>
             )}
           </div>
+          <div
+            className="relative"
+            onMouseEnter={() => setExteriorsOpen(true)}
+            onMouseLeave={() => setExteriorsOpen(false)}
+          >
+            <a
+              href="https://www.brazilianblackgranite.com"
+              className="text-[11px] font-medium uppercase tracking-[0.22em] transition-opacity hover:opacity-60"
+            >
+              Stone Exteriors ▾
+            </a>
+            {exteriorsOpen && (
+              <div className="absolute left-0 top-full pt-3">
+                <div className="flex min-w-56 flex-col border border-border bg-background py-2 text-foreground shadow-lg">
+                  <a
+                    href="https://www.brazilianblackgranite.com"
+                    className="px-5 py-3 text-[11px] font-medium uppercase tracking-[0.22em] transition-opacity hover:opacity-60"
+                  >
+                    Brazilian Black Granite
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
         </nav>
 
         <button
@@ -154,6 +179,26 @@ export function SiteHeader() {
                     className="text-sm uppercase tracking-[0.22em]"
                   >
                     Canadian Green Jade
+                  </a>
+                </div>
+              )}
+            </div>
+            <div className="flex flex-col gap-5">
+              <button
+                type="button"
+                onClick={() => setExteriorsOpen((v) => !v)}
+                className="text-left text-sm uppercase tracking-[0.22em]"
+                aria-expanded={exteriorsOpen}
+              >
+                Stone Exteriors {exteriorsOpen ? "▴" : "▾"}
+              </button>
+              {exteriorsOpen && (
+                <div className="flex flex-col gap-5 pl-4">
+                  <a
+                    href="https://www.brazilianblackgranite.com"
+                    className="text-sm uppercase tracking-[0.22em]"
+                  >
+                    Brazilian Black Granite
                   </a>
                 </div>
               )}
